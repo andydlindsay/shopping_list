@@ -1,0 +1,20 @@
+{
+  "name": "source",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/andydlindsay/shopping_list.git",
+  "author": "Andy Lindsay <andydlindsay@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.3",
+    "morgan": "^1.9.0"
+  }
+}

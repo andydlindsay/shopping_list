@@ -23,10 +23,8 @@ mongoose.connection.on('error', (err) => {
 // app setup
 const app = express();
 
-// cors middleware
-app.use(cors());
-
 // app middlewares
+app.use(cors());
 app.use(morgan('combined'));
 app.use(bodyParser.json({ type: '*/*' }));
 

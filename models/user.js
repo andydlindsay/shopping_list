@@ -14,7 +14,8 @@ const userSchema = new Schema({
     email: {
         type: String,
         unique: true,
-        lowercase: true
+        lowercase: true,
+        required: [true, 'Email is required.']
     },
     password: {
         type: String,
@@ -50,3 +51,7 @@ userSchema.methods.comparePassword = function(candidatePassword, callback) {
 
 // export model
 const User = module.exports = mongoose.model('user', userSchema);
+
+module.exports.getUserById = function(id, callback) {
+    User.findById(id, callback);
+};
